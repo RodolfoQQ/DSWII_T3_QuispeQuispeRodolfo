@@ -21,8 +21,8 @@ public class DswiiT3QuispeQuispeRodolfoApplication {
 			public void addCorsMappings(CorsRegistry registry)  {
 				registry.addMapping("api/v1/**")
 						 .allowedOrigins("https://www.cibertec.edu.pe")
-						.allowedMethods("GET", "POST", "PUT");
-						//.allowedOrigins("*");
+						.allowedMethods("GET", "POST", "PUT")
+						.allowedOrigins("*");
 			}
 		};
 
