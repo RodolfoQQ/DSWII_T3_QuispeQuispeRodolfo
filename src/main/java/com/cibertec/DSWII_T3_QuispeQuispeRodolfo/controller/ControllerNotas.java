@@ -1,11 +1,9 @@
 package com.cibertec.DSWII_T3_QuispeQuispeRodolfo.controller;
 
-import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models.Notas;
-import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models.dtos.DtoEntity;
+
 import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models.dtos.NotasDto;
 import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.services.IserviceNotas;
-import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.services.ServiceNotas;
-import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.util.DtoUtil;
+
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,8 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
+
 
 @RestController
 @AllArgsConstructor

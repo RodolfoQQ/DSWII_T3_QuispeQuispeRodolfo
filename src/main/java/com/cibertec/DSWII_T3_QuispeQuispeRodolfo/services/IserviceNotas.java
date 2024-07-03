@@ -8,5 +8,5 @@ public interface IserviceNotas {
 
     public List<Object[]> findallnotas();
 
-    List<Notas> listallnotasentty();
+
 }

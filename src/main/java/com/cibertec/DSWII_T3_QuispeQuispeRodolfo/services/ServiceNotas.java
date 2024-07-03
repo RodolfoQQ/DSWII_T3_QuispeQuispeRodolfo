@@ -18,8 +18,5 @@ public class ServiceNotas implements  IserviceNotas{
         return  repositoryNotas.findAllNotasDto();
     }
 
-    @Override
-    public List<Notas> listallnotasentty() {
-        return repositoryNotas.findAll();
-    }
+
 }
