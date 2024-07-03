@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface IserviceNotas {
 
-    public List<Notas> findallnotas();
+    public List<Object[]> findallnotas();
+
+    List<Notas> listallnotasentty();
 }

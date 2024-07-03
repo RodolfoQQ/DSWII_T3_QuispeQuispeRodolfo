@@ -1,9 +1,8 @@
 package com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models;
 
 import com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models.pk.NotasAlumnoCursoPkID;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,8 +19,20 @@ public class Notas {
     @EmbeddedId
     private NotasAlumnoCursoPkID id;
 
-    private Integer exaparcial;
-    private Integer exafinal;
+    private Double exaparcial;
+    private Double exafinal;
 
+
+    @ManyToOne
+    @MapsId("idalumno")
+    @JoinColumn(name = "idalumno")
+    @JsonBackReference
+    private Alumno alumno;
+
+    @ManyToOne
+    @MapsId("idcurso")
+    @JoinColumn(name = "idcurso")
+    @JsonBackReference
+    private  Curso curso;
 
 }

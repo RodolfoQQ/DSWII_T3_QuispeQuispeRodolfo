@@ -12,9 +12,14 @@ import java.util.List;
 public class ServiceNotas implements  IserviceNotas{
 
     private RepositoryNotas repositoryNotas;
-    @Override
-    public List<Notas> findallnotas() {
 
+    @Override
+    public List<Object[]> findallnotas() {
+        return  repositoryNotas.findAllNotasDto();
+    }
+
+    @Override
+    public List<Notas> listallnotasentty() {
         return repositoryNotas.findAll();
     }
 }

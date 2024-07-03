@@ -22,7 +22,6 @@ public class Alumno {
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "idesp")
-    @MapsId("idesp")
     @JsonBackReference
     private Especialidad especialidad;
 
