@@ -1,7 +1,6 @@
 package com.cibertec.DSWII_T3_QuispeQuispeRodolfo.models.seguridad;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,4 +13,10 @@ import lombok.Setter;
 @Entity
 @Table
 public class Rol {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idrol;
+    @Column(name = "nomrol")
+    private String nomrol;
+
 }
