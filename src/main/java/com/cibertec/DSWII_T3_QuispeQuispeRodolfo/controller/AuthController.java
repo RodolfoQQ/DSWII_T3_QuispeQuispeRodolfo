@@ -60,7 +60,7 @@ public class AuthController {
 
 
 
-
+git
     private String generarToken(Usuario usuario){
         String clave = "@Cibertec2024";
         List<GrantedAuthority> grantedAuthorityList =
